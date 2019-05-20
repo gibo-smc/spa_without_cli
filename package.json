@@ -1,0 +1,32 @@
+{
+  "name": "spa_without_cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gibo-smc/spa_without_cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gibo-smc/spa_without_cli/issues"
+  },
+  "homepage": "https://github.com/gibo-smc/spa_without_cli#readme",
+  "devDependencies": {
+    "css-loader": "^2.1.1",
+    "vue-loader": "^15.7.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.32.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
+}
