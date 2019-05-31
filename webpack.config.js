@@ -16,6 +16,28 @@ module.exports = {
   module: {
     rules:[
       {
+        test: /\.js$/,
+        exclude: /node-modules/,
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              presets: [
+                [
+                  '@babel/preset-env',
+                  {
+                    'modules': false,
+                    targets: {
+                      ie: '11'
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+      },
+      {
         test: /\.vue$/,
         use: 'vue-loader'
       },
