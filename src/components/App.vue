@@ -3,6 +3,9 @@
   <p class="msg">
     {{ msg }}
   </p>
+  <button @click="changMsg">
+    change message
+  </button>
 </div>
 </template>
 
@@ -12,6 +15,12 @@ export default {
   data () {
     return {
       msg: 'goobye Vue CLI!!'
+    }
+  },
+  methods: {
+    changMsg () {
+      const newMsg = 'ES6で書いてみた'
+      this.msg = newMsg
     }
   }
 }
