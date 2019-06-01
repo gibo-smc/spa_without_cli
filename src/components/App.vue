@@ -1,12 +1,11 @@
-<template>
-<div id="app">
-  <p class="msg">
-    {{ msg }}
-  </p>
-  <button @click="changMsg">
-    change message
-  </button>
-</div>
+<template lang="pug">
+#app
+  h1
+    | 非VueCLI製 SPA w/pug
+  p.msg
+    | {{ msg }}
+  button(@click="changeMsg")
+    | change message
 </template>
 
 <script>
@@ -18,7 +17,7 @@ export default {
     }
   },
   methods: {
-    changMsg () {
+    changeMsg () {
       const newMsg = 'ES6で書いてみた'
       this.msg = newMsg
     }

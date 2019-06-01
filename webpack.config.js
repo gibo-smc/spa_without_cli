@@ -29,6 +29,7 @@ module.exports = {
                     'modules': false,
                     targets: {
                       ie: '11'
+                      // chrome: '74'
                     }
                   }
                 ]
@@ -40,6 +41,10 @@ module.exports = {
       {
         test: /\.vue$/,
         use: 'vue-loader'
+      },
+      {
+        test: /\.pug$/,
+        loader: 'pug-plain-loader'
       },
       {
         test: /\.css$/,
