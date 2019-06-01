@@ -25,8 +25,10 @@ export default {
 }
 </script>
 
-<style>
-.msg {
+<style lang="sass">
+.msg
   color: red
-}
+  display: flex
+  justify-content: center
+  align-items: center
 </style>

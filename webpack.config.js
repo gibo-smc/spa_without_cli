@@ -47,10 +47,31 @@ module.exports = {
         loader: 'pug-plain-loader'
       },
       {
-        test: /\.css$/,
+        test: /\.sass$/,
         use: [
           'vue-style-loader',
-          'css-loader'
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [
+                require('autoprefixer')({
+                  browsers: [
+                    'last 2 versions',
+                    'not ie < 11',
+                    'Android >= 4',
+                    'iOS >= 9'
+                  ]
+                })
+              ]
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              indentedSyntax: true
+            }
+          }
         ]
       }
     ]
