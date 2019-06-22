@@ -11,25 +11,11 @@ export default {
   name: 'App',
   components: {
     Calculation
-  },
-  data () {
-    return {
-      msg: 'goobye Vue CLI!!'
-    }
-  },
-  methods: {
-    changeMsg () {
-      const newMsg = 'ES6で書いてみた'
-      this.msg = newMsg
-    }
   }
 }
 </script>
 
-<style lang="sass">
-.msg
+<style lang="sass" scoped>
+h1
   color: red
-  display: flex
-  justify-content: center
-  align-items: center
 </style>

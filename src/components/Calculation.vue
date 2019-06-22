@@ -2,14 +2,15 @@
 div
   p
     input.left(type="text" v-model.number="leftInput")
-    | &nbsp;+&nbsp;
+    span
+      | +
     input.right(type="text" v-model.number="rightInput")
-    | &nbsp;+&nbsp;
+    span
+      | =
     span.answer
       | {{ answer }}
-  p
-    button.exec(@click="execCalc")
-      | 足し算実行
+  button.exec(@click="execCalc")
+    | 足し算実行
 </template>
 <script>
 import addition from '../modules/addition'
@@ -29,3 +30,13 @@ export default {
   }
 }
 </script>
+
+<style lang="sass" scoped>
+p
+  display: flex
+  input
+    width: 30px
+    margin-right: 14px
+  span
+    margin-right: 14px
+</style>

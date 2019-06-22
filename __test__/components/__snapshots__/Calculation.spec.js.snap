@@ -2,7 +2,6 @@
 
 exports[`Calculation 数字を入力し計算ボタンを押下すると正しく計算されること 1`] = `
 <div>
-  <p><input type="text" class="left">&nbsp;+&nbsp;<input type="text" class="right">&nbsp;+&nbsp;<span class="answer">7</span></p>
-  <p><button class="exec">足し算実行</button></p>
+  <p><input type="text" class="left"><span>+</span><input type="text" class="right"><span>=</span><span class="answer">7</span></p><button class="exec">足し算実行</button>
 </div>
 `;
