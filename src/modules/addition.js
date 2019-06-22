@@ -1,1 +1,1 @@
-export default (leftInput, righrInput) => leftInput + righrInput 
+export default (leftInput, righrInput) => leftInput + righrInput

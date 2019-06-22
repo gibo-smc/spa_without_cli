@@ -1,6 +1,3 @@
-/* ----------------------------------------------------------------------------
-足し算
----------------------------------------------------------------------------- */
 <template lang="pug">
 div
   p
@@ -8,7 +5,8 @@ div
     | &nbsp;+&nbsp;
     input.right(type="text" v-model.number="rightInput")
     | &nbsp;+&nbsp;
-    | {{ answer }}
+    span.answer
+      | {{ answer }}
   p
     button.exec(@click="execCalc")
       | 足し算実行
@@ -31,4 +29,3 @@ export default {
   }
 }
 </script>
-
