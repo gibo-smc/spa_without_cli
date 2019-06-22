@@ -2,15 +2,16 @@
 #app
   h1
     | 非VueCLI製 SPA w/pug
-  p.msg
-    | {{ msg }}
-  button(@click="changeMsg")
-    | change message
+  Calculation
 </template>
 
 <script>
+import Calculation from './Calculation'
 export default {
   name: 'App',
+  components: {
+    Calculation
+  },
   data () {
     return {
       msg: 'goobye Vue CLI!!'
