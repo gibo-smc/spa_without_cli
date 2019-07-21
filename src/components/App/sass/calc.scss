@@ -1,0 +1,15 @@
+.calc{
+  p {
+    display: flex;
+    input {
+      width: 30px;
+      margin-right: 14px;
+    }
+    span {
+      margin-right: 14px;
+    }
+  }
+  .comment {
+    color: pink;
+  }
+}

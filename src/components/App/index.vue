@@ -1,12 +1,12 @@
 <template lang="pug">
 #app
   h1
-    | 非VueCLI製 SPA w/pug
+    | 非VueCLI製 SPA w/pug...
   Calculation
 </template>
 
 <script>
-import Calculation from './Calculation'
+import Calculation from '../Calculation'
 export default {
   name: 'App',
   components: {
@@ -15,7 +15,5 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-h1
-  color: red
+<style lang="sass" src="./sass/index.sass">
 </style>

@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+div.calc
   p
     input.left(type="text" v-model.number="leftInput")
     span
@@ -11,6 +11,8 @@ div
       | {{ answer }}
   button.exec(@click="execCalc")
     | 足し算実行
+  p.comment
+    | ボタンを押して下さい
 </template>
 <script>
 import addition from '../modules/addition'
@@ -30,13 +32,3 @@ export default {
   }
 }
 </script>
-
-<style lang="sass" scoped>
-p
-  display: flex
-  input
-    width: 30px
-    margin-right: 14px
-  span
-    margin-right: 14px
-</style>

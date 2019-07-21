@@ -1,5 +1,6 @@
 const webpack = require('webpack')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const globImporter = require('node-sass-glob-importer')
 const path = require('path')
 
 module.exports = {
@@ -55,7 +56,8 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
-              indentedSyntax: true
+              indentedSyntax: true,
+              importer: globImporter()
             }
           }
         ]
